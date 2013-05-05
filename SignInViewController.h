@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SignInViewController.h
 //  GeneralAssemblyPhotoApp
 //
 //  Created by Eliot Arntz on 5/4/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SignInViewController : UIViewController
 
 @end

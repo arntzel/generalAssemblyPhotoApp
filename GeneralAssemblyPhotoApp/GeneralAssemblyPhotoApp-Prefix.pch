@@ -11,4 +11,13 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+
+#import <MapKit/MapKit.h>
+
+//            [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
+
+
 #endif
