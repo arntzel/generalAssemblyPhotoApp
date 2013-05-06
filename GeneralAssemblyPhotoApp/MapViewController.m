@@ -27,6 +27,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:UIBarButtonItemStyleBordered target:self action:@selector(saveButtonPressed:)];
+    self.navigationItem.rightBarButtonItem = barButtonItem;
+    
+}
+
+-(void)saveButtonPressed:(id)sender {
+    self.photo.placemark = [BFLocation sharedInstance]. placemark;
+    [[NSManagedObjectContext contextForCurrentThread] saveToPersistentStoreAndWait];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    NSLog(@"%@", [Photo findAll]);
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,7 +49,7 @@
     
     [[BFLocation sharedInstance] startLocationManagerWithCompletion:^(BOOL foundLocation) {
         [self centerMapWithLocation:[BFLocation sharedInstance].placemark];
-        ;
+        NSLog(@"*** %@", [BFLocation sharedInstance].placemark.country);
     }];
 }
 

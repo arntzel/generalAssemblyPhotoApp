@@ -7,6 +7,8 @@
 //
 
 #import "SignInViewController.h"
+#import "FeedViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SignInViewController ()
 
@@ -27,6 +29,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.enterEmailTextField.layer.borderColor = [UIColor blackColor].CGColor;
+    self.enterEmailTextField.layer.borderWidth = 10;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +41,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)signButtonPressed:(UIButton *)sender {
+    
+    FeedViewController *feedViewController = [[FeedViewController alloc] initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:feedViewController animated:YES];
+    
+}
 @end

@@ -54,6 +54,15 @@
 		C405ED4C1735E7C90086368F /* location_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C405ED481735E7C90086368F /* location_Button.png */; };
 		C405ED4D1735E7C90086368F /* location_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C405ED491735E7C90086368F /* location_arrow@2x.png */; };
 		C405ED4E1735E7C90086368F /* location_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C405ED4A1735E7C90086368F /* location_arrow.png */; };
+		C405ED801736BF700086368F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C405ED7F1736BF6F0086368F /* MapKit.framework */; };
+		C405ED821736BFDE0086368F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C405ED811736BFDD0086368F /* CoreLocation.framework */; };
+		C405ED871736CFC40086368F /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C405ED851736CFC20086368F /* FeedViewController.m */; };
+		C405ED881736CFC40086368F /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C405ED861736CFC30086368F /* FeedViewController.xib */; };
+		C405ED8C1736D49E0086368F /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C405ED8A1736D49C0086368F /* CameraViewController.m */; };
+		C405ED8D1736D49E0086368F /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C405ED8B1736D49D0086368F /* CameraViewController.xib */; };
+		C405ED911736E4F30086368F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C405ED8F1736E4F30086368F /* Model.xcdatamodeld */; };
+		C405ED941736E5DE0086368F /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = C405ED931736E5DE0086368F /* Photo.m */; };
+		C405EDC81736FCCA0086368F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C405EDC71736FCC90086368F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +149,18 @@
 		C405ED481735E7C90086368F /* location_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_Button.png; sourceTree = "<group>"; };
 		C405ED491735E7C90086368F /* location_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location_arrow@2x.png"; sourceTree = "<group>"; };
 		C405ED4A1735E7C90086368F /* location_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location_arrow.png; sourceTree = "<group>"; };
+		C405ED7F1736BF6F0086368F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C405ED811736BFDD0086368F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C405ED841736CFC10086368F /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
+		C405ED851736CFC20086368F /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
+		C405ED861736CFC30086368F /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		C405ED891736D49B0086368F /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		C405ED8A1736D49C0086368F /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		C405ED8B1736D49D0086368F /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		C405ED901736E4F30086368F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C405ED921736E5DE0086368F /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		C405ED931736E5DE0086368F /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		C405EDC71736FCC90086368F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +168,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C405EDC81736FCCA0086368F /* QuartzCore.framework in Frameworks */,
+				C405ED821736BFDE0086368F /* CoreLocation.framework in Frameworks */,
+				C405ED801736BF700086368F /* MapKit.framework in Frameworks */,
 				C405ED3B1735E4940086368F /* CoreImage.framework in Frameworks */,
 				C405ED391735E47B0086368F /* CoreData.framework in Frameworks */,
 				C405ECB81735E38B0086368F /* UIKit.framework in Frameworks */,
@@ -161,6 +185,7 @@
 		C405ECAB1735E38B0086368F = {
 			isa = PBXGroup;
 			children = (
+				C405EDC71736FCC90086368F /* QuartzCore.framework */,
 				C405ECBD1735E38B0086368F /* GeneralAssemblyPhotoApp */,
 				C405ECB61735E38B0086368F /* Frameworks */,
 				C405ECB51735E38B0086368F /* Products */,
@@ -178,6 +203,8 @@
 		C405ECB61735E38B0086368F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C405ED811736BFDD0086368F /* CoreLocation.framework */,
+				C405ED7F1736BF6F0086368F /* MapKit.framework */,
 				C405ED3A1735E4940086368F /* CoreImage.framework */,
 				C405ED381735E47B0086368F /* CoreData.framework */,
 				C405ECB71735E38B0086368F /* UIKit.framework */,
@@ -193,6 +220,7 @@
 				C405ED371735E44A0086368F /* Initialization */,
 				C405ED361735E4400086368F /* ViewControllers */,
 				C405ED301735E41B0086368F /* Helper */,
+				C405ED8E1736E4BD0086368F /* Model */,
 				C405ED4F1735E7D10086368F /* Libraries */,
 				C405ECBE1735E38B0086368F /* Supporting Files */,
 			);
@@ -335,6 +363,12 @@
 				C405ED311735E43C0086368F /* SignInViewController.h */,
 				C405ED321735E43C0086368F /* SignInViewController.m */,
 				C405ED331735E43C0086368F /* SignInViewController.xib */,
+				C405ED841736CFC10086368F /* FeedViewController.h */,
+				C405ED851736CFC20086368F /* FeedViewController.m */,
+				C405ED861736CFC30086368F /* FeedViewController.xib */,
+				C405ED891736D49B0086368F /* CameraViewController.h */,
+				C405ED8A1736D49C0086368F /* CameraViewController.m */,
+				C405ED8B1736D49D0086368F /* CameraViewController.xib */,
 				C405ED3C1735E7220086368F /* MapViewController.h */,
 				C405ED3D1735E7220086368F /* MapViewController.m */,
 				C405ED3E1735E7220086368F /* MapViewController.xib */,
@@ -357,6 +391,16 @@
 				C405ECDA1735E3FC0086368F /* MagicalRecord */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C405ED8E1736E4BD0086368F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C405ED8F1736E4F30086368F /* Model.xcdatamodeld */,
+				C405ED921736E5DE0086368F /* Photo.h */,
+				C405ED931736E5DE0086368F /* Photo.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +464,8 @@
 				C405ED4C1735E7C90086368F /* location_Button.png in Resources */,
 				C405ED4D1735E7C90086368F /* location_arrow@2x.png in Resources */,
 				C405ED4E1735E7C90086368F /* location_arrow.png in Resources */,
+				C405ED881736CFC40086368F /* FeedViewController.xib in Resources */,
+				C405ED8D1736D49E0086368F /* CameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +508,10 @@
 				C405ED3F1735E7220086368F /* MapViewController.m in Sources */,
 				C405ED451735E7B30086368F /* BFAddFilter.m in Sources */,
 				C405ED461735E7B30086368F /* BFLocation.m in Sources */,
+				C405ED871736CFC40086368F /* FeedViewController.m in Sources */,
+				C405ED8C1736D49E0086368F /* CameraViewController.m in Sources */,
+				C405ED911736E4F30086368F /* Model.xcdatamodeld in Sources */,
+				C405ED941736E5DE0086368F /* Photo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +628,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C405ED8F1736E4F30086368F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C405ED901736E4F30086368F /* Model.xcdatamodel */,
+			);
+			currentVersion = C405ED901736E4F30086368F /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C405ECAC1735E38B0086368F /* Project object */;
 }

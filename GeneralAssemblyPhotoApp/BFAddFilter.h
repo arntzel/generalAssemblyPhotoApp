@@ -13,4 +13,7 @@
 
 +(UIImage *)addFilter:(UIImage *)image;
 
+
+
+
 @end

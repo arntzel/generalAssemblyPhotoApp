@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignInViewController : UIViewController
+@interface SignInViewController : UIViewController<UITextFieldDelegate>
+@property (strong, nonatomic) IBOutlet UITextField *enterEmailTextField;
+@property (strong, nonatomic) IBOutlet UITextField *enterPasswordTextField;
+- (IBAction)signButtonPressed:(UIButton *)sender;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MapViewController.h"
 @class ViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
